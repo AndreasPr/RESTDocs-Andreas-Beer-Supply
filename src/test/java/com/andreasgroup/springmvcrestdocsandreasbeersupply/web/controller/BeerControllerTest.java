@@ -37,7 +37,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * Created on 24/Oct/2020 to spring-mvc-restdocs-andreas-beer-supply
  */
 @ExtendWith(RestDocumentationExtension.class)
-@AutoConfigureRestDocs
+@AutoConfigureRestDocs(uriScheme = "https", uriHost = "andreas.dev", uriPort = 80)
 @WebMvcTest(BeerController.class)
 @ComponentScan(basePackages = "com.andreasgroup.springmvcrestdocsandreasbeersupply.web.mappers")
 class BeerControllerTest {
