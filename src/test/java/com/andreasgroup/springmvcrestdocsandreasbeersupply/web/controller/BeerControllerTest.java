@@ -61,7 +61,7 @@ class BeerControllerTest {
                         .param("stateOfBeer", "Nice")
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andDo(document("v1/beer",
+                .andDo(document("v1/beer-get",
                         pathParameters(
                                 parameterWithName("beerId").description("UUID of the beer")
                 ), requestParameters(
@@ -92,7 +92,7 @@ class BeerControllerTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(beerDtoJson))
                 .andExpect(status().isCreated())
-                .andDo(document("v1/beer",
+                .andDo(document("v1/beer-post",
                         requestFields(
                                 fields.withPath("beerName").description("Name of the Beer"),
                                 fields.withPath("beerStyle").description("Style of the Beer"),

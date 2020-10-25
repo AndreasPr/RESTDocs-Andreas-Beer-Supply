@@ -1,0 +1,46 @@
+= RESTDocs Andreas Beer Supply
+
+Demo which present how to use Spring RESTDocs with JUnit5.
+
+`BeerControllerTest` makes a call to a service in order to
+generate 3 documentation snippets
+
+
+GET REQUEST - GET BEER
+
+Make a request using curl:
+include::{snippets}/v1/beer-get/curl-request.adoc[]
+
+The HTTP request:
+include::{snippets}/v1/beer-get/http-request.adoc[]
+
+The HTTP response:
+include::{snippets}/v1/beer-get/http-response.adoc[]
+
+The Response Body:
+include::{snippets}/v1/beer-get/response-body.adoc[]
+
+The Response Fields:
+include::{snippets}/v1/beer-get/response-fields.adoc[]
+
+POST REQUEST - SAVE A NEW BEER
+
+Make a request using curl:
+include::{snippets}/v1/beer-post/curl-request.adoc[]
+
+The HTTP request:
+include::{snippets}/v1/beer-post/http-request.adoc[]
+
+The HTTP response:
+include::{snippets}/v1/beer-post/http-response.adoc[]
+
+The Response Body:
+include::{snippets}/v1/beer-post/response-body.adoc[]
+
+The Request Fields:
+include::{snippets}/v1/beer-post/request-fields.adoc[]
+
+The Response Fields:
+include::{snippets}
+
+
